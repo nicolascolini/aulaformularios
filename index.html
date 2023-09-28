@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>FORMULARIOS</title>
+</head>
+
+<body>
+    <header>
+        <h1> CADASTRO DEVS </h1>
+        <p>
+
+            Cadastre-se no nosso formulário para receber informações diárias sobre a área de Tecnologia.
+        </p>
+    </header>
+
+    <main>
+        <form action="" method="post">
+            <h2> Formulario para Desenvolvedores</h2>
+
+            <div class="container-form">
+                <fieldset>
+
+                    <legend> Dados Pessoais </legend>
+
+                    <!-- Nome, email, telefone, 
+            endereço, data de nascimento -->
+                    <div>
+
+                        <label for="nome">Nome: *</label>
+                        <input type="text" name="nome" id="nome" placeholder="Informe seu nome" required />
+
+                    </div>
+
+                    <div>
+
+                        <label for="email">Email: *</label>
+                        <input type="email" name="email" id="email" placeholder="Informe seu email" required />
+
+                    </div>
+
+                    <div>
+                        <label for="whats">Whats: *</label>
+                        <input type="tel" name="whats" id="whats" placeholder="Informe seu Whatsapp" required />
+
+                    </div>
+
+                    <div>
+                        <label for="endereco">Endereço: *</label>
+                        <input type="text" name="endereço" id="endereço" placeholder="Informe seu endereço" required />
+
+                    </div>
+
+                    <div>
+                        <label for="dtNascimento">Data de Nascimento: *</label>
+                        <input type="date" name="dtNascimento" id="dtNascimento" />
+                    </div>
+
+                </fieldset>
+
+                <fieldset>
+                    <legend> Dados Profissionais</legend>
+
+                    <div>
+                        <label for="experiencia">Informe seu nivel de experiência</label>
+
+                        <select name="experiencia" id="experiencia">
+
+                            <option value="" selected>Selecione uma opção</option>
+                            <option value="estagio">Estagio</option>
+                            <option value="junior">Junior</option>
+                            <option value="pleno">Pleno</option>
+                            <option value="senior">Senior</option>
+
+                        </select>
+
+                        <div>
+
+                            <p> Informe sua preferência de trabalho</p>
+                            <div class="container-radio">
+
+                            </div>
+                            <input type="radio" name="modoTrab" id="presencial" value="presencial">
+                            <label for="presencial">Presencial</label>
+                        </div>
+
+                    <div>
+                    <input type="radio" name="modoTrab" id="remoto" value="remoto">
+                    <label for="Remoto">Remoto</label>
+            </div>
+            <div>
+                <input type="radio" name="modoTrab" id="hibrido" value="hibrido">
+                <label for="hibrido">Hibrido</label>
+            </div>
+
+            </div>
+            </div>
+        </fieldset>
+        <fieldset>
+            <div>
+                <p>Informe suas linguagens de programação você domina</p>
+                <div class="container-checkbox">
+                    <div>
+                        <input type="checkbox" name="linguagens" id="html" value="html">
+                        <label for="html">HTML</label>
+                    </div>
+
+                    <div class="container-checkbox">
+                        <div>
+                            <input type="checkbox" name="linguagens" id="CSS" value="css">
+                            <label for="html">CSS</label>
+                        </div>
+
+                        <div class="container-checkbox">
+                            <div>
+                                <input type="checkbox" name="linguagens" id="Javascript" value="javascript">
+                                <label for="html">Javascript</label>
+                            </div>
+
+                            <div class="container-checkbox">
+                                <div>
+                                    <input type="checkbox" name="linguagens" id="php" value="php">
+                                    <label for="html">PHP</label>
+                                </div>
+                                <div class="container-checkbox">
+                                    <div>
+                                        <input type="checkbox" name="linguagens" id="java" value="java">
+                                        <label for="html">Java</label>
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+                            <div>
+
+                                <label for="mensagem">Nos conte um pouco sobre você...</label>
+                                <textarea name="mensagem" id="mensagem"></textarea>
+                            </div>
+                            </fieldset>
+                            
+
+                            <div class="container-botoes"></div>
+                            <input type="reset" value="limpar"/>
+                            <input type="submit" value="enviar"/>
+                        </div>
+        </form>
+    </main>
+</body>
+
+</html>
